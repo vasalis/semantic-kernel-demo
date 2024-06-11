@@ -8,12 +8,6 @@ namespace SKDemo.Plugins
 {
     public class RAGPlugin
     {
-        [KernelFunction, Description("Get the answer for the even greater question. Not the great question, but the even greater one.")]
-        public string GetTheAsnwerToTheGreatQuestion()
-        {
-            return "24 it is!";
-        }
-
         [KernelFunction, Description("Get content related to Azure Documentation.")]
         public async Task<string> GetAzureDocs([Description("The keywords to pass to the search engine to search for azure related information.")] string aKeywords)
         {

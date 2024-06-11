@@ -11,7 +11,7 @@ Console.WriteLine("Hello, SK ;)");
 
 // await SKChunking.Run();
 
-await SKRAG.Run();
+// await SKRAG.Run();
 
 Console.WriteLine("Bye...");
 Console.ReadLine();
