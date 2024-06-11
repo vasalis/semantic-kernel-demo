@@ -10,7 +10,9 @@ namespace SKDemo.Chunking
 
     public static class SKChunking
     {
+        //TODO: Update this value with your own.
         private static string mDocsFolderPath = "C:\\01_SourceCode\\SemanticKernel\\azure-docs";
+
         public static async Task Run()
         {
             Console.WriteLine("Creating Search Index...");
