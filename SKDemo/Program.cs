@@ -5,13 +5,18 @@ using SKDemo.RAG;
 
 Console.WriteLine("Hello, SK ;)");
 
-//await SKPromptBasics.Run();
+// SK Prompts basics.
+// await SKPromptBasics.Run();
 
-//await SKPromptTemplating.Run();
+// SK Prompt templating.
+// await SKPromptTemplating.Run();
+
+// SK First Plugin.
+// await SKFirstPlugin.Run();
 
 // await SKChunking.Run();
 
-// await SKRAG.Run();
+await SKRAG.Run();
 
 Console.WriteLine("Bye...");
 Console.ReadLine();

@@ -10,6 +10,8 @@ namespace SKDemo.Utils
 {
     public static class Utils
     {
+        private static SharpToken.GptEncoding tokenizer = SharpToken.GptEncoding.GetEncoding("cl100k_base");
+
         public static ReadOnlyMemory<float> GetEmbeddings(string input)
         {
             try
@@ -33,6 +35,12 @@ namespace SKDemo.Utils
             }
 
             return null;
+        }
+
+        public static int TokenCount(string text)
+        {
+            var tokens = tokenizer.Encode(text);
+            return tokens.Count;
         }
     }
 }

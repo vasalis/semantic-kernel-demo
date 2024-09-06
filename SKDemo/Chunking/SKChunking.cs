@@ -43,10 +43,10 @@ namespace SKDemo.Chunking
                 // Split into chunks using SK TextChunker
 
                 // first get lines.
-                var lLines = TextChunker.SplitPlainTextLines(lText, 2000);
+                var lLines = TextChunker.SplitMarkDownLines(lText, 2000);
 
                 // then get paragraphs
-                var lParagraphs = TextChunker.SplitPlainTextParagraphs(lLines, 1000, 100);
+                var lParagraphs = TextChunker.SplitMarkdownParagraphs(lLines, 1000, 100);
 
                 int lChunksCounter = 0;
                 foreach (var lParagraph in lParagraphs)

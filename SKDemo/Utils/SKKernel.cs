@@ -17,6 +17,7 @@ namespace SKDemo.Utils
             {
                 mKernel = Kernel.CreateBuilder()
                       .AddAzureOpenAIChatCompletion(MyConfig.AzureOpenAIDeploymentId, MyConfig.AzureOpenAIEndPoint, MyConfig.AzureOpenAIKey)
+               
                       .Build();
             }
 
